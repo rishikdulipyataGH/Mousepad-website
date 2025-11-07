@@ -4,6 +4,7 @@ const contacts = {
 };
 
 const catalog = {
+  lineup: ['raiden', 'k83', 'hayate-otsu', 'hien', 'shidenkai-v2', 'zero', 'saturn', 'type99'],
   categories: [
     {
       slug: 'speed',
@@ -39,19 +40,120 @@ const catalog = {
       detail: {
         blurb: 'Raiden leads the speed lab with a PU-coated weave that ignores humidity spikes and stays silent.',
         surface: 'Ultra-tight speed weave carries a hydrophobic coat for minimal static friction.',
-        base: '3.5 mm mid-density foam snaps back flat, even on glass desks.',
+        base: 'Mid-density foam snaps back flat, even on glass desks.',
         edge: 'Stealth stitched edges melt into the surface with zero fray risk.'
       },
       feel: 'Speed / Low static',
       price: 30,
       size: '490 × 420 mm',
-      thickness: '3.5 mm',
+      thickness: '5 mm',
       edgeFinish: 'Stealth stitched',
       baseDensity: 'Mid-density foam',
+      hardness: 'XSoft / Soft / Mid',
       image: 'assets/raiden.jpg',
       gallery: [
         { label: 'Surface layer', caption: 'Upload the top-coat macro when ready.', src: 'assets/raiden.jpg' },
         { label: 'Base & edge', caption: 'Swap for the base photo later.', src: 'assets/raiden.jpg' }
+      ],
+      cta: contacts.discord
+    },
+    k83: {
+      slug: 'k83',
+      name: 'K83',
+      category: 'speed',
+      summary: 'Firm-base speed pad with add-on control when you plant the mouse feet.',
+      detail: {
+        blurb: 'K83 keeps a rapid initial glide but adds stopping torque from its denser base stack.',
+        surface: 'Finely woven cloth rides on a friction-balanced coating for confident micro-adjustments.',
+        base: 'High-density foam keeps the pad level and resists compression under palm weight.',
+        edge: 'Laser-straight stitched edges resist lift.'
+      },
+      feel: 'Speed / Firm base',
+      price: 30,
+      size: '490 × 420 mm',
+      thickness: '5 mm',
+      edgeFinish: 'Precision stitch',
+      baseDensity: 'High-density foam',
+      hardness: 'XSoft / Soft / Mid',
+      image: 'assets/k83.jpg',
+      gallery: [
+        { label: 'Surface layer', caption: 'Swap with the cloth macro later.', src: 'assets/k83.jpg' },
+        { label: 'Base & edge', caption: 'Add the foam/bottom capture here.', src: 'assets/k83.jpg' }
+      ],
+      cta: contacts.discord
+    },
+    'hayate-otsu': {
+      slug: 'hayate-otsu',
+      name: 'Hayate Otsu',
+      category: 'speed',
+      summary: 'Balanced weave with lightly textured glide for medium-speed control.',
+      detail: {
+        blurb: 'Hayate Otsu is the most adaptable member of the speed set, perfect for mid-sens conversions.',
+        surface: 'Textured nylon mix keeps a touch of feedback while staying fast.',
+        base: 'Stabilized foam prevents uneven slow-downs across the pad.',
+        edge: 'Micro stitch follows the pad silhouette for long-term durability.'
+      },
+      feel: 'Balanced speed',
+      price: 30,
+      size: '490 × 420 mm',
+      thickness: '5 mm',
+      edgeFinish: 'Micro stitched',
+      baseDensity: 'Stabilized foam',
+      hardness: 'XSoft / Soft / Mid',
+      image: 'assets/hayate-otsu.jpg',
+      gallery: [
+        { label: 'Surface layer', caption: 'Replace with the weave macro.', src: 'assets/hayate-otsu.jpg' },
+        { label: 'Base & edge', caption: 'Upload the backing shot.', src: 'assets/hayate-otsu.jpg' }
+      ],
+      cta: contacts.discord
+    },
+    hien: {
+      slug: 'hien',
+      name: 'Hien',
+      category: 'speed',
+      summary: 'Iconic rough texture for tactile feedback and precise braking.',
+      detail: {
+        blurb: 'Hien keeps the speed lineup honest with aggressive texture that still glides when you stay light.',
+        surface: 'Coarse weave texture grips when feet dig in, keeping kinetic control.',
+        base: 'Resilient foam resists warping and anchors the pad.',
+        edge: 'Raised stitch treatment prevents unraveling without rubbing the wrist.'
+      },
+      feel: 'Textured speed',
+      price: 30,
+      size: '490 × 420 mm',
+      thickness: '5 mm',
+      edgeFinish: 'Raised stitch',
+      baseDensity: 'Resilient foam',
+      hardness: 'XSoft / Soft / Mid',
+      image: 'assets/hien.jpg',
+      gallery: [
+        { label: 'Surface layer', caption: 'Upload the macro to highlight texture.', src: 'assets/hien.jpg' },
+        { label: 'Base & edge', caption: 'Add the underside photo soon.', src: 'assets/hien.jpg' }
+      ],
+      cta: contacts.discord
+    },
+    'shidenkai-v2': {
+      slug: 'shidenkai-v2',
+      name: 'Shidenkai V2',
+      category: 'speed',
+      summary: 'Glass-weave hybrid with almost hover-like glide.',
+      detail: {
+        blurb: 'Shidenkai V2 translates glass-bead smoothness into a cloth format for next-level flicks.',
+        surface: 'Glass-infused fibers stay slick yet consistent across humidity ranges.',
+        base: 'Reinforced rubberized base keeps the pad planted.',
+        edge: 'Coated edge wrap protects the fragile weave.'
+      },
+      feel: 'Glass hybrid speed',
+      price: 30,
+      size: '500 × 420 mm',
+      thickness: '5 mm',
+      edgeFinish: 'Edge wrap',
+      baseDensity: 'Reinforced rubber',
+      hardness: 'XSoft / Soft / Mid',
+      image: 'assets/shidenkai-v2.jpg',
+      gallery: [
+        { label: 'Surface layer', caption: 'Replace with crystal weave macro.', src: 'assets/shidenkai-v2.jpg' },
+        { label: 'Base & edge', caption: 'Add glass layer base shot.', src: 'assets/shidenkai-v2.jpg' }
       ],
       cta: contacts.discord
     },
@@ -69,13 +171,39 @@ const catalog = {
       feel: 'Balance / Micro texture',
       price: 30,
       size: '490 × 420 mm',
-      thickness: '3.5 mm',
+      thickness: '5 mm',
       edgeFinish: 'Rounded stitch',
       baseDensity: 'Soft-mid foam',
+      hardness: 'XSoft / Soft / Mid',
       image: 'assets/zero.jpg',
       gallery: [
         { label: 'Surface layer', caption: 'Replace with the balanced weave macro.', src: 'assets/zero.jpg' },
         { label: 'Base & edge', caption: 'Upload the underside capture soon.', src: 'assets/zero.jpg' }
+      ],
+      cta: contacts.discord
+    },
+    saturn: {
+      slug: 'saturn',
+      name: 'Saturn',
+      category: 'balance',
+      summary: 'Soft foam balance pad with muted branding and grounded glide.',
+      detail: {
+        blurb: 'Saturn leans slightly calmer than Zero, prioritizing stability for palm-heavy aimers.',
+        surface: 'Balanced weave keeps glide neutral with mild feedback.',
+        base: 'Soft foam dampens desk vibration and conforms to uneven tables.',
+        edge: 'Low-profile stitch to avoid wrist rub.'
+      },
+      feel: 'Balance / Soft base',
+      price: 30,
+      size: '500 × 400 mm',
+      thickness: '5 mm',
+      edgeFinish: 'Low stitch',
+      baseDensity: 'Soft foam',
+      hardness: 'XSoft / Soft / Mid',
+      image: 'assets/saturn-old.jpg',
+      gallery: [
+        { label: 'Surface layer', caption: 'Upload the surface close-up here.', src: 'assets/saturn-old.jpg' },
+        { label: 'Base & edge', caption: 'Add the base capture when ready.', src: 'assets/saturn-old.jpg' }
       ],
       cta: contacts.discord
     },
@@ -93,9 +221,10 @@ const catalog = {
       feel: 'Control / Hybrid',
       price: 30,
       size: '500 × 420 mm',
-      thickness: '4.5 mm',
+      thickness: '5 mm',
       edgeFinish: 'Heavy stitch',
       baseDensity: 'Thick foam',
+      hardness: 'XSoft / Soft / Mid',
       image: 'assets/type99.jpg',
       gallery: [
         { label: 'Surface layer', caption: 'Replace with texture macro soon.', src: 'assets/type99.jpg' },
@@ -164,6 +293,33 @@ function renderCategoryGrid() {
   });
 }
 
+function renderLineupGrid() {
+  const grid = document.getElementById('lineup-grid');
+  if (!grid) return;
+  grid.innerHTML = '';
+  catalog.lineup.forEach((slug) => {
+    const product = catalog.products[slug];
+    const category = catalog.categories.find((cat) => cat.slug === product.category);
+    if (!product) return;
+    const card = document.createElement('article');
+    card.className = 'product-card reveal';
+    card.innerHTML = `
+      <img src="${basePath}${product.image}" alt="${product.name} pad" loading="lazy" />
+      <div>
+        <p class="eyebrow">${category?.indicator || ''}</p>
+        <h3>${product.name}</h3>
+        <p>${product.summary}</p>
+      </div>
+      <div class="product-meta">
+        <span>${product.feel}</span>
+        <span class="price">${priceFormatter.format(product.price)}</span>
+      </div>
+      <a class="buy-btn" href="${basePath}products/${product.slug}.html">View detail</a>
+    `;
+    grid.appendChild(card);
+  });
+}
+
 function renderProductPage(slug) {
   const product = catalog.products[slug];
   if (!product) return;
@@ -179,7 +335,7 @@ function renderProductPage(slug) {
           <div class="hero-ctas">
             <span class="price">${priceFormatter.format(product.price)}</span>
             <a class="btn primary" href="${product.cta}" target="_blank" rel="noreferrer">Buy / Contact</a>
-            <a class="btn ghost" href="${basePath}index.html#categories">Back to categories</a>
+            <a class="btn ghost" href="${basePath}index.html#lineup">Back to lineup</a>
           </div>
         </div>
         <div class="hero-media">
@@ -216,7 +372,8 @@ function renderProductPage(slug) {
       { label: 'Thickness', value: product.thickness },
       { label: 'Size', value: product.size },
       { label: 'Edge finish', value: product.edgeFinish },
-      { label: 'Base density', value: product.baseDensity }
+      { label: 'Base density', value: product.baseDensity },
+      { label: 'Hardness options', value: product.hardness }
     ];
     specsEl.innerHTML = `
       <h3>Specs</h3>
@@ -295,6 +452,7 @@ function initPage() {
   if (pageType === 'home') {
     renderHeroCarousel();
     renderCategoryGrid();
+    renderLineupGrid();
   } else if (pageType === 'product') {
     renderProductPage(body.dataset.product);
   }

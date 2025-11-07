@@ -98,8 +98,7 @@ main {
   letter-spacing: -0.02em;
 }
 
-.hero .eyebrow,
-.section-heading .eyebrow {
+.eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-size: 0.8rem;
